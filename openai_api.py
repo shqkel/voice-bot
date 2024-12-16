@@ -1,11 +1,9 @@
 import base64
 
-from dotenv import load_dotenv
 from openai import OpenAI
 import os
 
-
-load_dotenv()
+# streamlit cloud 환경에서는 dotenv 대신, streamlit의 secret기능 사용
 
 client = OpenAI() # api_key=OPENAI_API_KEY
 
